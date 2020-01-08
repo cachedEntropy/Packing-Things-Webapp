@@ -8,7 +8,7 @@ app.set('view engine', 'ejs')
 
 
 // Handling static files : middleware
-app.use(express.static(',/public'))
+app.use(express.static('./public'))
 
 
 // Starting the controller(s)
