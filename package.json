@@ -1,0 +1,25 @@
+{
+  "name": "packing-things-webapp",
+  "version": "1.0.0",
+  "description": "A webapp to keep track of things that one needs to pack for a trip",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pheeww/Packing-Things-Webapp.git"
+  },
+  "keywords": [
+    "web-app",
+    "NodeJS",
+    "Express",
+    "MongoDB"
+  ],
+  "author": "Mehul Garg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pheeww/Packing-Things-Webapp/issues"
+  },
+  "homepage": "https://github.com/pheeww/Packing-Things-Webapp#readme"
+}
