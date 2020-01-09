@@ -1,19 +1,7 @@
 var bodyParser = require('body-parser')
-var mongoose = require('mongoose')
 
-//connecting to the remote database
+var ToPack = require('../models/toPackmodel')
 
-mongoose.connect("mongodb+srv://admin:admin@topack-duxvj.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser: true})
-
-// Create a schema - a blueprint 
-
-var toPackSchema = new mongoose.Schema({
-
-    item: String
-    
-})
-
-var ToPack = mongoose.model('ToPack', toPackSchema)
 
 //var data = [ {item: 'Shoes'}, {item: 'Jacket'}, {item: 'ToothBrush'}, {item: 'Shades'}, {item: 'Jeans'}]
 var urlencodedParser = bodyParser.urlencoded({extended:false})
