@@ -15,8 +15,13 @@ app.post('/toPack',urlencodedParser, function(req, res){
     res.json(data)
 })   
 
-app.delete('/toPack', function(req, res){
-})   
-
+app.delete('/toPack/:thing', function(req, res){
+    console.log(req.params.thing)
+    data = data.filter(function(value, index, arr){
+        return value.item!==req.params.thing
+    })
+    console.log(data)
+    res.json(data)  
+})
 
 }
